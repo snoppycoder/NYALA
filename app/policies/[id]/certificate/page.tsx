@@ -24,7 +24,7 @@ export default async function CertificatePage({ params }: { params: Promise<{ id
               SAMPLE
             </span>
 
-            <Logo size={72} />
+            <Logo />
             <h1 className="mt-5 text-3xl font-extrabold tracking-tight text-primary">Certificate of Insurance</h1>
             <p className="mb-3 text-muted-foreground">The Seal of Your Protection</p>
 
