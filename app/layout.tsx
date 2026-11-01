@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={cn("font-sans", geist.variable)}>
       <body className={`${jakarta.variable} font-sans`}>
         {/* Mobile-first frame: full width on phones, centred column on desktop */}
-        <div className="mx-auto flex min-h-dvh w-full max-w-md flex-col bg-background md:shadow-xl">
+        <div className="mx-auto flex min-h-dvh w-full flex-col bg-background md:shadow-xl">
           {children}
         </div>
       </body>

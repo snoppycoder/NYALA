@@ -1,18 +1,18 @@
 /** Placeholder data matching the bracketed fields in the design. Swap for API data. */
-export const customer = { name: "Milki Legesse" };
+export const customer = { name: "Yonas Engida" };
 
 export const policy = {
   id: "POL-001",
   product: "Personal vehicle",
   cover: "Comprehensive cover",
-  plate: "[Plate no.]",
-  vehicle: "[Vehicle]",
-  period: "[start] – [end]",
-  renews: "[date]",
-  sumInsured: "ETB [amount]",
-  premium: "ETB [amount]",
+  plate: "C56613 AA",
+  vehicle: "BYD Song PLUS 2024 · Code 2",
+  period: "2026 – 2029",
+  renews: "2029",
+  sumInsured: "ETB 8,500,000",
+  premium: "ETB 255,000",
   paidVia: "telebirr",
-  txnId: "[txn ID]",
+  txnId: "TLB-2026-847291",
   status: "Active",
 };
 

@@ -10,11 +10,13 @@ import { ActionBar } from "@/components/action-bar";
 import { claimSteps } from "@/lib/mock";
 import { cta } from "@/lib/ui";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
+import { ArrowLeft } from "lucide-react";
 
 export default function ClaimsPage() {
   const [photos, setPhotos] = useState<File[]>([]);
   const [submitted, setSubmitted] = useState(false);
-
+  const router = useRouter();
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     // TODO: POST description + photos to your claims API.
@@ -22,8 +24,9 @@ export default function ClaimsPage() {
   }
 
   return (
-    <>
+    <div className="mb-12 overflow-y-hidden">
       <header className="border-b bg-card px-5 pb-4 pt-6">
+
         <h1 className="text-3xl font-extrabold tracking-tight">Report a claim</h1>
         <p className="text-muted-foreground">Takes about 3 minutes</p>
       </header>
@@ -87,6 +90,6 @@ export default function ClaimsPage() {
           Submit claim
         </Button>
       </ActionBar>
-    </>
+    </div>
   );
 }

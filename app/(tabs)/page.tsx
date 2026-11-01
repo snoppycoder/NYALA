@@ -15,8 +15,8 @@ const products = [
 
 export default function HomePage() {
   return (
-    <>
-      <header className="bg-[#7a1a0a] px-5 pb-16 pt-6 text-primary-foreground">
+    <div className="mb-12">
+      <header className=" bg-[#7a1a0a] px-5 pb-16 pt-6 text-primary-foreground">
         <Logo />
         <p className="mt-4 text-lg">The Seal of Your Protection</p>
         <h1 className="mt-1 text-4xl font-extrabold tracking-tight">Hello, {customer.name}</h1>
@@ -56,6 +56,6 @@ export default function HomePage() {
           <Link href="/claims">Report a claim</Link>
         </Button>
       </div>
-    </>
+    </div>
   );
 }
