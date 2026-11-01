@@ -20,7 +20,7 @@ export default async function SuccessPage({
   return (
     <>
       <main className="flex flex-1 flex-col items-center justify-center gap-5 px-5 text-center">
-        <Logo size={62} />
+        <Logo />
         <CircleCheck className="size-16 text-primary" strokeWidth={1.5} />
         <h1 className="text-3xl font-extrabold tracking-tight">Payment successful</h1>
         <p className="text-muted-foreground">Your policy {policy.id} is now active.</p>
@@ -30,10 +30,10 @@ export default async function SuccessPage({
         </Card>
       </main>
       <ActionBar className="space-y-3">
-        <Button asChild className={`w-full ${cta}`}>
+        <Button className={`w-full ${cta}`}>
           <Link href={`/policies/${policy.id}`}>View policy</Link>
         </Button>
-        <Button asChild variant="outline" className={`w-full ${ctaOutline}`}>
+        <Button variant="outline" className={`w-full ${ctaOutline}`}>
           <Link href={`/policies/${policy.id}/certificate`}>Download certificate</Link>
         </Button>
       </ActionBar>

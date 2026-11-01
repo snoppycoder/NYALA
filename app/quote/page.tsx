@@ -78,7 +78,7 @@ export default function QuotePage() {
       </main>
 
       <ActionBar className="grid grid-cols-[1fr_2fr] gap-3">
-        <Button asChild variant="outline" className={ctaOutline}>
+        <Button variant="outline" className={ctaOutline}>
           <Link href="/">Back</Link>
         </Button>
         <Button className={cta} onClick={pay} disabled={!premium}>

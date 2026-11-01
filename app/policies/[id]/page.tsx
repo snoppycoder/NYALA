@@ -46,14 +46,14 @@ export default async function PolicyPage({ params }: { params: Promise<{ id: str
       </main>
 
       <ActionBar className="space-y-3">
-        <Button asChild className={`w-full ${cta}`}>
+        <Button className={`w-full ${cta}`}>
           <Link href={`/policies/${p.id}/certificate`}>Download sample certificate</Link>
         </Button>
         <div className="grid grid-cols-2 gap-3">
-          <Button asChild variant="outline" className={ctaOutline}>
+          <Button variant="outline" className={ctaOutline}>
             <Link href="/claims">Report a claim</Link>
           </Button>
-          <Button asChild variant="outline" className={ctaOutline}>
+          <Button variant="outline" className={ctaOutline}>
             <Link href="/quote">Renew</Link>
           </Button>
         </div>
